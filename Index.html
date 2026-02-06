@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyadharshini S | Data Shinobi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Inter:wght@300;400;600&display=swap');
+
+        :root {
+            --leaf-orange: #ff9a00;
+            --uchiha-red: #ce1126;
+            --ninja-black: #0d0d0d;
+            --scroll-tan: #f4e4bc;
+        }
+
+        body { 
+            background-color: var(--ninja-black); 
+            color: #f8fafc; 
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; 
+        }
+
+        .ninja-font { font-family: 'Permanent Marker', cursive; letter-spacing: 2px; }
+
+        /* Naruto Themed Parallax Backgrounds */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+                              url('https://images8.alphacoders.com/605/605592.png'); /* Hokage Rock Faces */
+        }
+        .jutsu-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                              url('https://wallpaperaccess.com/full/434199.jpg'); /* Sharingan Pattern */
+        }
+        .mission-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                              url('https://images6.alphacoders.com/605/605589.png'); /* Hidden Leaf Forest */
+        }
+
+        .parallax { 
+            background-attachment: fixed; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            position: relative;
+        }
+
+        .scroll-container {
+            background-color: var(--scroll-tan);
+            color: #2d2d2d;
+            border: 4px solid #8b4513;
+            border-radius: 10px;
+            box-shadow: 10px 10px 0px var(--uchiha-red);
+        }
+
+        .chakra-glow {
+            transition: 0.5s;
+            border: 2px solid transparent;
+        }
+        .chakra-glow:hover {
+            box-shadow: 0 0 30px var(--leaf-orange);
+            border-color: var(--leaf-orange);
+            transform: scale(1.02);
+        }
+
+        .jutsu-tag {
+            background: rgba(206, 17, 38, 0.2);
+            border: 1px solid var(--uchiha-red);
+            padding: 4px 12px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+            color: var(--leaf-orange);
+            font-weight: bold;
+        }
+
+        .ninja-nav {
+            background: rgba(13, 13, 13, 0.95);
+            border-bottom: 3px solid var(--leaf-orange);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 ninja-nav px-6 py-4 flex justify-between items-center">
+        <h1 class="ninja-font text-2xl text-orange-500">PRIYADHARSHINI<span class="text-orange">.S</span></h1>
+        <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-widest">
+            <a href="#home" class="hover:text-orange-500 transition">Village Gate</a>
+            <a href="#about" class="hover:text-orange-500 transition">Shinobi File</a>
+            <a href="#skills" class="hover:text-orange-500 transition">Jutsu Library</a>
+            <a href="#experience" class="hover:text-orange-500 transition">Mission History</a>
+            <a href="#education" class="hover:text-orange-500 transition">Secret Scrolls</a>
+        </div>
+    </nav>
+
+    <header id="home" class="parallax hero-bg h-screen flex items-center justify-center">
+        <div class="z-10 text-center px-4">
+            <div class="mb-4 inline-block px-4 py-1 border-2 border-orange-500 text-orange-500 text-xs font-bold uppercase rounded-sm bg-black/50">Rank: Data Science Jonin</div>
+            <h1 class="ninja-font text-6xl md:text-9xl text-white mb-4 drop-shadow-[0_5px_5px_rgba(255,154,0,1)]">DATA SHINOBI</h1>
+            <p class="text-xl md:text-2xl text-orange-100 max-w-3xl mx-auto italic font-semibold">"Mastering the art of data manipulation to forge high-impact strategies."</p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#experience" class="bg-orange-600 hover:bg-orange-500 text-white px-10 py-4 font-bold uppercase transition shadow-[0_0_20px_rgba(255,154,0,0.6)]">View Mission Log</a>
+                <a href="mailto:pdharshinis0906@gmail.com" class="border-2 border-white hover:border-orange-500 px-10 py-4 font-bold uppercase transition bg-black/30">Send Messenger Hawk</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 px-6 bg-[#0d0d0d] relative overflow-hidden">
+        <div class="absolute top-10 right-10 opacity-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Konohagakure_Symbol.svg" width="400">
+        </div>
+
+        <div class="max-w-6xl mx-auto bg-gray-900/50 p-8 md:p-16 rounded-lg border-2 border-orange-500 relative z-10 backdrop-blur-md">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative group">
+                    <img src="PriyaImg.png" alt="Priyadharshini" class="rounded border-4 border-orange-500 shadow-2xl transition duration-500 group-hover:scale-105">
+                    <div class="absolute -bottom-4 -right-4 bg-orange-600 p-4 font-bold text-white transform rotate-2 shadow-lg ninja-font">HIDDEN LEAF ID</div>
+                </div>
+                <div>
+                    <h2 class="ninja-font text-4xl mb-6 text-orange-500">Shinobi Intelligence</h2>
+                    <p class="text-gray-300 leading-relaxed text-lg mb-8">
+                        Highly motivated and results-oriented Data Scientist with expertise in Machine Learning, Deep Learning, and Data Engineering, 
+                        Proficient in Python, SQL, and Flask, with a strong ability to translate technical insights into high-impact strategies.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 border-2 border-orange-500/30 bg-orange-900/20 text-center">
+                            <div class="text-4xl font-bold text-orange-500 ninja-font">10%</div>
+                            <div class="text-[10px] text-gray-400 uppercase font-bold mt-2">Churn Vanished</div>
+                        </div>
+                        <div class="p-6 border-2 border-orange-500/30 bg-orange-900/20 text-center">
+                            <div class="text-4xl font-bold text-orange-500 ninja-font">15%</div>
+                            <div class="text-[10px] text-gray-400 uppercase font-bold mt-2">Accuracy Seal</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="parallax jutsu-bg py-24 px-6" style="background-image: url('https://images-assets.nasa.gov/image/PIA08653/PIA08653~large.jpg');">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 class="ninja-font text-center text-5xl text-orange-500 mb-16 uppercase">The Library of Jutsu</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-black/90 p-8 chakra-glow border-t-4 border-orange-500">
+                    <h3 class="ninja-font text-white mb-6 text-xl tracking-widest border-b border-orange-500/30 pb-2">Ninjutsu (ML/Code)</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="jutsu-tag">Python</span><span class="jutsu-tag">Pandas/Numpy/Scikit-learn/Statsmodel</span>
+                        <span class="jutsu-tag">XG Boost</span><span class="jutsu-tag">Deep Learning</span>
+                        <span class="jutsu-tag">NLP</span><span class="jutsu-tag">CNN/RNN/ANN/KNN/SVM/PCA</span>
+                        <span class="jutsu-tag">RandomForest & Regression/Classification/Clustering</span><span class="jutsu-tag">Machine Learning</span>
+                        <span class="jutsu-tag">Flask</span><span class="jutsu-tag">Supervised & Unsupervised</span>
+                        <span class="jutsu-tag">SQL</span><span class="jutsu-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="bg-black/90 p-8 chakra-glow border-t-4 border-orange-500">
+                    <h3 class="ninja-font text-white mb-6 text-xl tracking-widest border-b border-orange-500/30 pb-2">Chakra Control (DevOps)</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="jutsu-tag">AWS EC2/S3/RDS/EKS/ECS</span><span class="jutsu-tag">Docker</span>
+                        <span class="jutsu-tag">Kubernetes</span><span class="jutsu-tag">Terraform</span>
+                        <span class="jutsu-tag">Jenkins</span><span class="jutsu-tag">Ansible</span>
+                        <span class="jutsu-tag">CI/CD Github</span><span class="jutsu-tag">IAM & IaC</span>
+                        <span class="jutsu-tag">AWS SageMaker & CloudWatch</span><span class="jutsu-tag">Secrets Manager</span>
+                    </div>
+                </div>
+                <div class="bg-black/90 p-8 chakra-glow border-t-4 border-orange-500">
+                    <h3 class="ninja-font text-white mb-6 text-xl tracking-widest border-b border-orange-500/30 pb-2">Tactics (Management)</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="jutsu-tag">PMP Certificate</span><span class="jutsu-tag">Agile/Scrum/Kanban Boards</span>
+                        <span class="jutsu-tag">Stakeholders</span><span class="jutsu-tag">Risk Mgmt</span>
+                        <span class="jutsu-tag">PowerBI</span><span class="jutsu-tag">Jira</span>
+                        <span class="jutsu-tag">Tableau</span><span class="jutsu-tag">Change & Time Mgmt</span>
+                        <span class="jutsu-tag">Problem-Solving</span><span class="jutsu-tag">Troubleshooting</span>
+                        <span class="jutsu-tag">Critical & Statistical Thinking</span><span class="jutsu-tag">Communication</span>
+                        <span class="jutsu-tag">MS Excel, MS PPT, Google Sheets</span><span class="jutsu-tag">Asana, Trello</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="parallax mission-bg py-24 px-6">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="ninja-font text-4xl text-orange-500 mb-12 border-l-8 border-orange-600 pl-6 uppercase">Mission Records</h2>
+            <div class="bg-black/80 p-10 rounded-lg border-l-4 border-orange-500">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white uppercase">Data Scientist Trainee</h3>
+                        <p class="text-orange-500 font-bold uppercase text-xs mt-1">NLC India Limited (NLCIL)</p>
+                    </div>
+                    <span class="text-xs font-bold text-gray-500">Oct 2022 - Jan 2024</span>
+                </div>
+                <ul class="space-y-4 text-gray-300 text-sm leading-relaxed italic">
+                    <li>•Developed and deployed a predictive customer churn model utilizing Logistic Regression and XG Boost, achieving a 15% increase in model accuracy.</li>
+                    <li>• Implemented proactive customer engagement strategies based on model results, successfully reducing overall customer churn by 10%.</li>
+                    <li>• Designed and maintained robust ETL data pipelines using Python and SQL (MySQL) for efficient processing of large datasets.</li>
+                    <li>• Conducted in-depth Exploratory Data Analysis (EDA) using Pandas, Matplotlib, and Seaborn to uncover key trends and anomalies.</li>
+                    <li>• Communicated complex technical findings to non-technical stakeholders through clear and concise reports and presentations.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-24 bg-[#0d0d0d] px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="ninja-font text-center text-5xl text-orange-500 mb-16 uppercase">Secret Scrolls of Knowledge</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="scroll-container p-8">
+                    <h3 class="ninja-font text-2xl mb-4 border-b-2 border-gray-800 pb-2">Academy Background</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold">MCA, Data Science</p>
+                            <p class="text-sm">SASTRA University | GPA: 7.41</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">BCA, Data Modeling</p>
+                            <p class="text-sm">Bharathidasan University | GPA: 8.06</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">MBA, HRM</p>
+                            <p class="text-sm">University of Madras | GPA: 7.7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-container p-8">
+                    <h3 class="ninja-font text-2xl mb-4 border-b-2 border-gray-800 pb-2">Elite Certifications</h3>
+                    <ul class="space-y-4 font-bold">
+                        <li class="flex items-center"><i class="fas fa-scroll text-red-700 mr-3"></i> Project Management Professional Certificate (Google)</li>
+                        <li class="flex items-center"><i class="fas fa-scroll text-red-700 mr-3"></i> AWS DevOps (MSS Bangalore)</li>
+                        <li class="flex items-center"><i class="fas fa-scroll text-red-700 mr-3"></i> Diploma in IT (Grade 'A')</li>
+                    </ul>
+                    <a href="https://drive.google.com/uc?export=download&id=1MzrajtBLLc8yRlb8UwulohspuYfW3N9s"  target="_blank" 
+                      class="mt-8 block bg-red-700 text-white text-center py-4 rounded font-bold uppercase hover:bg-red-800 transition">
+                      Summon Full Scroll (PDF)</a>
+             </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-16 text-center border-t-4 border-orange-600">
+        <h2 class="ninja-font text-3xl text-orange-500 mb-8 tracking-[0.3em]">ESTABLISH CONTACT</h2>
+        <div class="flex justify-center space-x-12 mb-10 text-4xl">
+            <a href="mailto:pdharshinis0906@gmail.com" class="text-orange-500 hover:text-white transition transform hover:scale-125"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/priyadharshini-s-spd" target="_blank" class="text-orange-500 hover:text-white transition transform hover:scale-125"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/priyadharshini9S" target="_blank" class="text-orange-500 hover:text-white transition transform hover:scale-125"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="ninja-font text-orange-500 text-xl tracking-widest">+91-9345858232</p>
+        <div class="text-[10px] text-gray-600 font-bold uppercase mt-6 tracking-widest">
+            © 2026 Priyadharshini S | THE HIDDEN LEAF DATA MISSION
+        </div>
+    </footer>
+
+</body>
+</html>
