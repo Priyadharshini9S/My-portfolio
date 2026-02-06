@@ -24,3 +24,13 @@ If you'd like to explore the code on your own machine:
 1. Clone the repo:
    ```bash
    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+
+---
+
+### Tips for Customizing This:
+
+* **The Live Link:** Don't forget to replace the bracketed text with the actual link GitHub gives you under **Settings > Pages**.
+* **Add Images:** If you want to get fancy, you can add a screenshot of your site. Just upload an image to your repo and add `![Portfolio Screenshot](your-image-name.png)` to the top of the README.
+* **Be Specific:** If you used a specific CSS framework (like Tailwind or Bootstrap), make sure to list it under the "Built With" section.
+
+**Once you've updated your README, would you like me to help you draft the LinkedIn post to announce your new site?**
